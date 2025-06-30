@@ -1,4 +1,3 @@
-<details> <summary>Click to expand</summary>
 js
 Copy
 Edit
