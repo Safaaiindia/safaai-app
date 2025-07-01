@@ -1,17 +1,18 @@
-import { initializeApp } from "firebase/app";
+mport { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB5DIhgHtx52-IQ83YNEZjo1RuvQ-NdGFY",
-  authDomain: "safaai-a4388.firebaseapp.com",
-  projectId: "safaai-a4388",
-  storageBucket: "safaai-a4388.appspot.com",
-  messagingSenderId: "937526139397",
-  appId: "1:937526139397:web:03e625b8bd8e9bf50bda6c",
-  measurementId: "G-DRC4HX9YL9"
+  apiKey: "AIzaSyXXXXXXX", // your actual Web API key
+  authDomain: "safaai-app.firebaseapp.com",
+  projectId: "safaai-app",
+  storageBucket: "safaai-app.appspot.com",
+  messagingSenderId: "295042126437",
+  appId: "1:295042126437:web:xxxxxx"
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-
-export { auth };
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const storage = getStorage(app);
