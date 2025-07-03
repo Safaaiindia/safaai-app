@@ -1,1 +1,1 @@
-Empty unused vite.config.fixed.js
+Delete vite.config.fixed.js
