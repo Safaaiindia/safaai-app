@@ -1,10 +1,10 @@
-import React from 'react';
+import BookingFlow from './BookingFlow';
 
 function App() {
   return (
     <div>
       <h1>Welcome to Safaai</h1>
-      {/* your routes or components go here */}
+      <BookingFlow />
     </div>
   );
 }
